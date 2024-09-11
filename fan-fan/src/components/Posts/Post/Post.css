@@ -1,0 +1,73 @@
+.postblock{
+    background-color:rgba(255,255,255, 1);
+    border: 0px solid black;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    /* box-shadow: 0 0 20px rgba(0,0,0, 20%); */
+    padding: 2%;
+        /* тень плашек */
+        box-shadow: inset -2px -2px 4px 0px rgba(0, 0, 0, 25%), inset 2px 2px 6px 1px rgba(255, 255, 255, 50%), 0px 0px 20px 0px rgba(0, 0, 0, 25%);
+}
+
+.postname{
+    font-size: 20px;
+}
+
+.typePost{
+    font-size: 75%;
+}
+
+.nameAcc{
+    font-size: 80%; 
+}
+
+.tg{
+    color: #B9B9B9;
+}
+
+.buttonChat button, .buttonChatOtkl button:hover{
+    border: 0px;
+    border-radius: 20px;
+    /* margin-bottom: 10px; */
+    background: linear-gradient(115deg, rgba(205,132,241,1) 0%, rgba(113,88,226,1) 100%);
+    box-shadow: 0 2px 4px rgba(0,0,0, 25%);
+    width: 100%;
+    color: white;
+    text-align: center;
+    /* height: 35px; */
+    padding: 5px;   
+}
+
+.buttonChatOtkl button{
+    background-color: white;
+    border: 1px solid #7158E2;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0, 25%);
+    padding: 4px 5px;
+    width: 100%;
+}
+
+/* .buttonChat button:hover{
+    background: #E4CCFF;
+    color: black;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0, 25%),
+    inset -2px -2px 4px rgba(0,0,0, 10%);
+} */
+
+.buttonChat button:hover{
+    background: #7158E2;
+}
+
+@media (width < 500px){
+    .postname{
+        font-size: 16px;
+    }
+    
+    .typePost{
+        font-size: 12px;
+    }
+    
+    .nameAcc{
+        font-size: 80%; 
+    }
+}

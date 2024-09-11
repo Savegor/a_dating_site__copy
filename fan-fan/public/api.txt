@@ -1,0 +1,132 @@
+Axios: 
+{
+	headers:{
+		id, //пользователя
+		password, //пароль
+}
+}
+/register
+	POST: зарегистрировать пользователя
+		{
+			login,
+			name,
+			password
+}
+	Ответ:
+		{
+			id, //пользователя
+}
+/login
+	POST: вход
+		{
+			login,
+			password
+}
+		Ответ:
+		{
+			id, //пользователя
+		}
+/profile
+	POST:
+		request
+		{
+			Необязательные (NaN)
+			name,
+			tg,
+			desc,
+			img,//ссылка на картинку в инете (погуглить в реакте),
+			interests: [id1,id2]
+}
+Response
+{} //пустое тело
+	GET: данные о пользователе
+		response
+		{
+			id,
+			name,
+			tg,
+			desc,
+			img,//ссылка на картинку в инете (пока разобраться)
+			interests: [{id, name}, {id, name}],
+			posts: [{id, type, name, desc, place, datetime_from, datetime_to, created_at, maxPeople, countPeople}, {}, {}]
+		}
+/interests
+	GET: получить все интересы
+	{
+		[{id, name}, {id, name}] //массив интересов
+	}
+/newpost
+	request
+	POST:
+	{
+		type, (0 - meeting, 1 - event, 2 - find),
+		name,
+		desc,
+		place, //место str
+		datetime_from, ‘dd mm yyyy hh mm’
+		datetime_to,
+		//created_at,
+		create_chat (false, true),
+		maxPeople //Ограничение на кол-во int
+		countPeople //int Кол-во откликнувшихся
+	}
+	response {} //пустой
+/posts
+    GET: получить посты
+        Query params:
+            type: тип постов (0,1,2)
+	response
+	{
+		name,
+		desc,
+		place,
+		datetime_from,
+		datetime_to,
+		created_at,
+		create_chat (false, true),
+		maxPeople,
+		countPeople,
+	}
+/follow/{post_id}
+	POST: откликнуться на пост (добавиться в чат)
+	request
+	{}
+	response
+	{
+		resultCode: 0 //успешно
+	} 
+	либо
+	{
+		resultCode: 1
+		message: 'Вы уже откликнулись на этот пост'
+	}
+/chats
+	GET: чаты пользователя (в которых он состоит) (это посты, на которые он откликнулся, и чаты его интересов)
+		{
+			[{id,
+			name,
+			id_last_message//id последнего сообщения
+			}, {}, {}]
+        }
+/chats/{chat_id}
+	GET: данные о чате и сообщениях
+	{
+		name,
+		messages: [
+			{
+				user_name, //кто написал сообщение
+				text, // текст сообщения
+				datetime //дата сообщения
+			},
+			{},
+			{}
+		]
+	}
+	POST: отправить сообщение
+	request
+	{
+		message //сообщение
+	}
+	response
+	{}//Успешно или нет
+//Возможно надо будет почитать про websockets, или каждые 10 сек запрос делать на обновление сообщений

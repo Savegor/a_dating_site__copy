@@ -1,0 +1,82 @@
+.userInfo {
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0 0 20px rgba(0,0,0, .25);
+    background: rgba(255, 255, 255, 1); */
+
+    /* тень плашек */
+    box-shadow: inset -2px -2px 4px 0px rgba(0, 0, 0, 25%), inset 2px 2px 6px 1px rgba(255, 255, 255, 50%), 0px 0px 20px 0px rgba(0, 0, 0, 25%);
+    
+}
+
+.userInfo .image{
+    position: relative;
+    padding: 0;
+}
+
+.userInfo .image .profileImg{
+    height: 130px;
+    width: 100%;
+    overflow:hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(228,204,255,1);
+}
+
+.userInfo .image img{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
+.userInfo .info{
+    color: #c4c4c4;
+    padding-right: 0px;
+}
+
+.userInfo .info .desc{
+    line-height: 1.2;
+}
+
+.btnChange{
+    border:1px solid #7158E2;
+    border-radius: 20px;
+    background: white;
+    color:black;
+    box-shadow: 0 2px 4px rgba(0,0,0, .25);
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.btnChange:hover{
+    background: #E4CCFF;
+    border: 1px solid #E4CCFF;
+    color: black;
+}
+
+.btnChange:focus{
+    background: linear-gradient(115deg, rgba(205,132,241,1) 0%, rgba(113,88,226,1) 100%);
+    color: white;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0, 25%),
+    inset -2px -2px 4px rgba(0,0,0, 10%);
+    border:none;
+}
+
+.btnChange.active{
+    background: linear-gradient(115deg, rgba(205,132,241,1) 0%, rgba(113,88,226,1) 100%);
+    color: white;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0, 25%),
+    inset -2px -2px 4px rgba(0,0,0, 10%);
+}
+
+.name_user_profile_and_btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_user_profile{
+    font-size: 16px;
+}

@@ -1,0 +1,319 @@
+/* .newads svg path{
+    fill: black;
+} */
+
+.newads button{
+    box-sizing: border-box;
+    align-items: center;
+}
+.newads .btnAnnouncement{
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.newads svg{
+    margin-right: 3px;
+    /* margin-top: 3px; */
+    /* background-color: aqua; */
+}
+
+.newads p{
+    background-color: aqua;
+}
+
+.newads{
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 0px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    
+    /* box-shadow: 0 0 20px rgba(0,0,0, .25); */
+    /* тень плашек */
+    box-shadow: inset -2px -2px 4px 0px rgba(0, 0, 0, 25%), inset 2px 2px 6px 1px rgba(255, 255, 255, 50%), 0px 0px 20px 0px rgba(0, 0, 0, 25%);
+    
+    max-height: 43px;
+    transition: 1.5s ease-in-out;
+    overflow: hidden;
+}
+.newads button{
+    border: none;
+    background-color: unset;
+    color: #C4C4C4;
+}
+
+.newadsOpened{
+    max-height: 500px;
+}
+
+
+.formPost {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    padding: 5px 20px;
+    row-gap: 14px;
+    /* box-shadow: 0 0 20px rgba(0,0,0, .25); */
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: rgba(255, 255, 255, 1); */
+}
+
+/* .formPost > * {
+    padding: 0;
+    margin: 0;
+} */
+
+.formPost hr{
+    padding: 0;
+    margin: 0;
+    border-top:1px solid black;
+    width: 90%;
+}
+
+.typeAnnouncement{
+    display: flex;
+    justify-content: space-between;
+}
+.contentTypeAnnouncement {
+    display: flex;
+    column-gap: 15px;
+}
+.formPost input[type="radio"]{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+      
+        border: 10px solid #B4B2B2;
+        transition: 0.2s all linear;
+        outline: none;
+        margin-right: 5px;
+      
+        position: relative;
+        top: 2px;   
+        
+        color: #B4B2B2;
+}
+
+.formPost input:checked{
+    border: 10px solid #7158E2;
+    color: black;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0, .25),
+                inset -2px -2px 4px rgba(0,0,0, .1);
+}
+
+.formText input{
+    border: none;
+}
+.formText input:focus{
+    border: none;
+}
+
+.formText input:active{
+    border: none;
+}
+.labelFormAnnouncement{
+    display: flex;
+}
+
+.announcementItem {
+    display: flex;
+    column-gap: 5px;
+}
+.nameAnnouncement{
+    display: flex;
+    column-gap: 5px;
+}
+.nameAnnouncement input{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    /* border-bottom: 1px solid black; */
+}
+
+.nameAnnouncement input:focus{
+    outline:none!important;
+}
+.description{
+    display: flex;
+    column-gap: 5px;
+}
+.description textarea{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    /* border-bottom: 1px solid black; */
+    padding-top: 0px;
+    border: none;
+    resize: none;
+}
+
+.description textarea:focus{
+    outline:none!important;
+}
+.placeItemForm{
+    display: flex;
+    column-gap: 5px;
+}
+
+.placeItemForm input{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    /* border-bottom: 1px solid black; */
+}
+
+.placeItemForm input:focus{
+    outline:none!important;
+}
+
+.dateItemForm{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dateItemForm input {
+    border: 0;
+}
+.dateItemForm input:focus{
+    outline:none!important;
+}
+.maxResponse input {
+    box-sizing: border-box;
+    border-color: #b9b9b9;
+    padding-right: 3px;
+    text-align: center;
+    max-width: 50px;
+    border-radius: 30px;
+}
+
+.maxResponse input:focus{
+    outline:none!important;
+}
+.maxResponse input::-webkit-outer-spin-button,
+.maxResponse input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.tireDateTimeStartEnd{
+    font-size: 20px;
+}
+.warningDateItemForm {
+    color: #B4B2B2;
+}
+
+.typeResponse {
+    display: flex;
+    column-gap: 15px;
+}
+
+.responseItem {
+    display: flex;
+    column-gap: 5px;
+}
+
+.btnPost {
+    display: flex;
+    width: 25%;
+    /* max-width: 200px; */
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(115deg, rgba(205,132,241,1) 0%, rgba(113,88,226,1) 100%);
+    box-shadow: 0 2px 4px rgba(0,0,0, .25);
+    justify-content: center;
+    border: none;
+    align-self: center;
+    padding: 5px;
+}
+
+
+/* Date */
+.dateTimeStartEnd{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dateItemFormInput{
+    padding: 0;
+    max-width: 120px;
+}
+
+.dateItemFormInput[type="date"] {
+    position: relative;
+}
+  
+.dateItemFormInput[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+.dateItemFormInput[type="date"]::-webkit-inner-spin-button,
+.dateItemFormInput[type="date"]::-webkit-clear-button {
+    z-index: -10;
+}
+.dateItemFormInput[type="date"]::-webkit-input-placeholder {
+    z-index: 99;
+}
+.dateItemFormInput[type="date"]:placeholder {
+    z-index: 99;
+}
+.dateItemFormInput[type="date"]:not(.has-value):before {
+    content: attr(placeholder);
+    width: 100%;
+}
+
+/* time */
+.relative input{
+    border: 0;
+    padding: 0;
+}
+
+.relative input[type="time"] {
+    border: none;
+    position: relative;
+}
+  
+.relative input[type="time"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+
+.relative input[type="time"]::-webkit-inner-spin-button,
+.relative input[type="time"]::-webkit-clear-button {
+    z-index: -10;
+}
+.relative input[type="time"]::-webkit-input-placeholder {
+    z-index: 99;
+}
+.relative input[type="time"]:placeholder {
+    z-index: 99;
+}
+.relative input[type="time"]:not(.has-value):before {
+    content: attr(placeholder);
+    width: 100%;
+}
+
+
+

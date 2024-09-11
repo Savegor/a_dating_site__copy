@@ -1,0 +1,50 @@
+/* .mainmenu{
+    background-color: aquamarine;
+} */
+/* .mainmenu{
+    font-size: 14px;
+} */
+
+.buttonmenu button{
+    border: 0px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+    /* background-color: rgba(255,255,255, 1); */
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 3px 5px;
+    /* box-shadow: 0 2px 4px rgba(0,0,0, .25); */
+    outline: none;
+    background-color: unset;
+}
+
+.buttonmenu a{
+    text-decoration: none;
+    color: black;
+}
+
+.buttonmenu button:hover{
+    background-color: #E4CCFF;
+    box-shadow: 0 2px 4px rgba(0,0,0, .25);
+}
+
+.NavLinkButton{
+    display: flex;
+    align-items: center;
+}
+
+.buttonmenu a.active button{
+    background: linear-gradient(115deg, rgba(205,132,241,1) 0%, rgba(113,88,226,1) 100%);
+    color: white;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0, 25%),
+    inset -2px -2px 4px rgba(0,0,0, 10%);
+}
+
+.buttonmenu a.active svg path{
+    fill: white;
+}
+
+.buttonmenu svg{
+    margin: 2%;
+}

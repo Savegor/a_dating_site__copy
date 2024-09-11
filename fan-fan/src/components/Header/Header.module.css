@@ -1,0 +1,223 @@
+/* .header h1{
+    font-weight: 700;
+} */
+.header{
+    /* box-shadow: 0 0 20px rgba(0,0,0, 20%); */
+    /* height: 10vh; */
+    background: rgba(255, 255, 255, 1);
+
+    /* тень плашек */
+    box-shadow: inset -2px -2px 4px 0px rgba(0, 0, 0, 25%), inset 2px 2px 6px 1px rgba(255, 255, 255, 50%), 0px 0px 20px 0px rgba(0, 0, 0, 25%);
+}
+
+/* .nigger{
+    height: 10vh;
+} */
+.authLogin{
+    display: flex;
+    justify-content: flex-end;
+}
+.authLogin a {
+    color: black;
+}
+
+.as{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+}
+
+.btnsLogReg {
+    display: flex;
+    color: black;
+}
+
+.auth {
+    display: flex; 
+    align-items: center;
+    /* justify-content: space-between; */
+    flex: 1;
+    /* margin-right: 20%; */
+    height: 100%;
+}
+
+.auth a{
+    text-decoration: none;
+}
+
+/* .login {
+    padding: 7px 50px;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+}  */
+
+/* .authorization {
+    /* padding: 7px 20px; 
+    width: 50%;
+    text-align: center;
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0, 25%);
+} */
+
+/* опционально при добавлении вложений */
+.button{
+    border:1px solid #7158E2;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0, 25%);
+    width: 100%;
+    /* height: 75%; */
+    padding: 5px;
+    font-size: 14px;
+}
+
+.button:hover{
+    background-color: #E4CCFF;
+    border-color: #E4CCFF;
+}
+
+/* .button:hover {
+    background-color: #ffffff;
+    box-shadow:0 0 10px 10px #000000 inset;
+  }
+.button:active {
+      background-color: #ffffff;
+      box-shadow:0 0 0 0 #000000; 
+} */
+    
+.modalBackClose{
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.btnBack{
+    border-radius: 20px;
+    padding: 5px;
+    background: url('back.svg');
+}
+
+.btnBack:focus {
+    box-shadow: none;
+}
+
+.btnClose {
+    border-radius: 20px;
+    padding: 5px;
+    background-image: url('close.svg');
+}
+
+.btnClose:focus {
+    box-shadow: none;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.btnsub {
+    align-self: center;
+    justify-content: center;
+    width: 75%;
+    text-align: center;
+    border:1px solid #7158E2;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0, 25%);
+    /* \padding: 7px 50px; */
+    /* font-size: 20px; */
+    /* margin-top: 20px; */
+}
+
+.btnsub:hover{
+    background-color: #E4CCFF;
+    border: none;
+    color: black;
+}
+
+.modalDialog {
+    /* width: 25vw;  какой дурак так сделал???*/
+}
+
+/* .modal2{
+    width: 100vw;
+}
+
+.modalDialog2{
+    width: 75vw;
+} */
+
+.modalContent{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25)
+}
+
+.modalBody hr{
+    border-top:1px solid rgba(228, 204, 255, 1);
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modalBody label{
+    padding: 0;
+    padding-left: 10px;
+}
+
+.InputLog {
+    border-radius: 0px;
+    padding: 2px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;    
+    padding-left: 10px;
+}
+
+.InputLog::placeholder{
+    font-style: italic;
+}
+
+.InputLog:hover {
+    background-color: rgba(228, 204, 255, 0.4);
+    border-radius: 5px;
+}
+
+.InputLog:focus {
+    /* border: 1px solid #7158E2; */
+    box-shadow: none;
+}
+
+/* .button a.active button{
+    background: linear-gradient(115deg, rgba(205,132,241,1) 0%, rgba(113,88,226,1) 100%);
+    color: white;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0, 25%),
+    inset -2px -2px 4px rgba(0,0,0, 100%);
+} */
+
+.modalBody .image{
+    position: relative;
+    overflow:hidden;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+}
+
+.modalBody .image img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}

@@ -1,0 +1,169 @@
+
+.modalBackClose{
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: center;
+}
+.modalContent{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    padding: 0 25px;
+}
+.modalBody hr{
+    border-top:1px solid rgba(228, 204, 255, 1);
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modalBody .image{
+    position: relative;
+    overflow:hidden;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+}
+
+.modalBody .image img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
+.btnBack{
+    border-radius: 20px;
+    padding: 5px;
+    background: url('../../assets/images/backBtn.png');
+}
+
+.btnBack:focus {
+    box-shadow: none;
+}
+
+.btnClose {
+    border-radius: 20px;
+    padding: 5px;
+    background-image: url('close.svg');
+}
+
+.btnClose:focus {
+    box-shadow: none;
+}
+
+.modal2{
+}
+.btnsub2{
+
+}
+/* .mainContentBox{
+    padding: 0;
+} */
+
+.profileImgBox{
+    position: relative;
+    overflow:hidden;
+    margin: 0 0px 0px 0px;
+    border-radius: 10px;
+    border: 1px solid rgba(228,204,255,1);
+}
+
+.progileImg{
+    /* position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%); */
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.descripstion{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.boxTextarea{
+    display: flex;
+    flex: 1;
+    height: 20px;
+}
+
+.descripstion .TextareaAutosize{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 100px;
+}
+.textInterest{
+    padding-top: 20px;
+    color: #c4c4c4;
+}
+
+.btnsub {
+    align-self: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    border:1px solid #7158E2;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0, 25%);
+    /* \padding: 7px 50px; */
+    /* font-size: 20px; */
+    /* margin-top: 20px; */
+}
+
+.btnsub:hover{
+    background-color: #E4CCFF;
+    border: none;
+    color: black;
+}
+
+.interests{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.btnInterest{
+    padding: 0 10px;
+    margin-right: 20px;
+    border: none;
+    /* border: 1px solid #000; */
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, .25);
+                /* 0px -2px 4px rgba(0,0,0, .05); */
+}
+.btnInterest:active{
+    background-color: #E4CCFF;
+    box-shadow: 0px 0px 4px 3px rgba(34, 60, 80, 0.5) inset;            
+}
+
+.active{
+    background-color: #E4CCFF;
+    box-shadow: 0px 0px 4px 3px rgba(34, 60, 80, 0.5) inset;
+}
+
+.editBtn{
+    border: none;
+    border-radius: 20px;
+}
+
+
